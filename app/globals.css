@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+ 
+@layer base {
+  :root {
+    --background: 238,
+    238,
+    238;
+    --foreground: 28,
+    49,
+    71;
+
+    --card: 238,
+    238,
+    238;
+    --card-foreground: 28,
+    49,
+    71;
+
+    --popover: 238,
+    238,
+    238;
+    --popover-foreground: 28,
+    49,
+    71;
+
+    --primary: 0,
+    38,
+    77;
+    --primary-foreground: 255,
+    204,
+    0;
+
+    --secondary: 0,
+    38,
+    77;
+    --secondary-foreground: 28,
+    49,
+    71;
+
+    --muted: 0,
+    38,
+    77;
+    --muted-foreground: 141,
+    114,
+    0;
+
+    --accent: 0,
+    38,
+    77;
+    --accent-foreground: 28,
+    49,
+    71;
+
+    --destructive: 255,
+    51,
+    0;
+    --destructive-foreground: 255,
+    204,
+    0;
+
+    --border: 28,
+    49,
+    71;
+    --input: 28,
+    49,
+    71;
+    --ring: 238,
+    238,
+    238;
+
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 28,
+    49,
+    71;
+    --foreground: 255,
+    204,
+    0;
+
+    --card: 28,
+    49,
+    71;
+    --card-foreground: 255,
+    204,
+    0;
+
+    --popover: 28,
+    49,
+    71;
+    --popover-foreground: 255,
+    204,
+    0;
+
+    --primary: 0,
+    38,
+    77;
+    --primary-foreground: 28,
+    49,
+    71;
+
+    --secondary: 0,
+    38,
+    77;
+    --secondary-foreground: 255,
+    204,
+    0;
+
+    --muted: 0,
+    38,
+    77;
+    --muted-foreground: 141,
+    114,
+    0;
+
+    --accent: 0,
+    38,
+    77;
+    --accent-foreground: 255,
+    204,
+    0;
+
+    --destructive: 255,
+    51,
+    0;
+    --destructive-foreground: 255,
+    204,
+    0;
+
+    --border: 0,
+    38,
+    77;
+    --input: 0,
+    38,
+    77;
+    --ring: 28,
+    49,
+    71;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.flexbox-bg::after {
+  /* content: 'FlexBox'; */
+  position: absolute;
+  top: 50%;
+  font-family: sans-serif;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15.5rem;
+  /* color: #101725; */
+  /* color: #3943566f; */
+  color:hsla(39, 100%, 50%, 0.43);
+  /* text-shadow: 0 0 15px rgb(25, 25, 27); */
+
+}
+
+.flexbox-bgg {
+  background: linear-gradient(to right, rgba(29, 20, 48, 0.5), rgba(7, 36, 69, 0.5));
+
+}
+
+.flexbox-bg {
+  position: relative;
+  /* background: #41295a !important; */
+  background: linear-gradient(to right, rgba(29, 20, 48, 0.5), rgba(7, 36, 69, 0.5));
+  /* background: linear-gradient(to top, #2f034583, #45048b86),
+    url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg') !important; */
+}
